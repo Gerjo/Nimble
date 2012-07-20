@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="80">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="f4" displayName="conf" projectFiles="true">
+        <itemPath>Host.h</itemPath>
+        <itemPath>SettingsManager.cpp</itemPath>
+        <itemPath>SettingsManager.h</itemPath>
+        <itemPath>hosts.json</itemPath>
+        <itemPath>server.json</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f6" displayName="json" projectFiles="true">
+        <itemPath>elements.h</itemPath>
+        <itemPath>elements.inl</itemPath>
+        <itemPath>reader.h</itemPath>
+        <itemPath>reader.inl</itemPath>
+        <itemPath>visitor.h</itemPath>
+        <itemPath>writer.h</itemPath>
+        <itemPath>writer.inl</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f5" displayName="Structs" projectFiles="true">
+        <itemPath>Client.h</itemPath>
+        <itemPath>HttpHeaders.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f3" displayName="Test Suite" projectFiles="true">
+        <logicalFolder name="f1" displayName="Tests" projectFiles="true">
+          <itemPath>HttpHeaderTest.h</itemPath>
+          <itemPath>TestingTests.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="f2" displayName="Tools" projectFiles="true">
+          <itemPath>Test.cpp</itemPath>
+          <itemPath>Test.h</itemPath>
+          <itemPath>TestSuite.cpp</itemPath>
+          <itemPath>TestSuite.h</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="f1" displayName="Threads" projectFiles="true">
+        <itemPath>Accepter.cpp</itemPath>
+        <itemPath>Accepter.h</itemPath>
+        <itemPath>Logger.cpp</itemPath>
+        <itemPath>Logger.h</itemPath>
+        <itemPath>Worker.cpp</itemPath>
+        <itemPath>Worker.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="Utils" projectFiles="true">
+        <itemPath>HeaderParser.cpp</itemPath>
+        <itemPath>HeaderParser.h</itemPath>
+        <itemPath>Helper.h</itemPath>
+        <itemPath>Runnable.h</itemPath>
+        <itemPath>Semaphore.h</itemPath>
+        <itemPath>Stack.h</itemPath>
+        <itemPath>ThreadManager.cpp</itemPath>
+        <itemPath>ThreadManager.h</itemPath>
+      </logicalFolder>
+      <itemPath>Nimble.cpp</itemPath>
+      <itemPath>Nimble.h</itemPath>
+      <itemPath>main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>GNU|GNU</compilerSet>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <commandLine>-pthread</commandLine>
+        </ccTool>
+      </compileType>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>GNU|GNU</compilerSet>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <commandLine>-pthread</commandLine>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+    </conf>
+  </confs>
+</configurationDescriptor>
