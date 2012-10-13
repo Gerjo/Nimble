@@ -64,7 +64,7 @@ void Accepter::setup() {
     }
 
     int yes = 1;
-    int no  = 1;
+    int no  = 0;
 
     if((::setsockopt(_listenFd, SOL_SOCKET, SO_REUSEADDR, &yes, sizeof(int)) == -1 ) || // prevents the "port in use" err.
         (::setsockopt(_listenFd, SOL_SOCKET, SO_KEEPALIVE, &no, sizeof(int)) == -1 )){
